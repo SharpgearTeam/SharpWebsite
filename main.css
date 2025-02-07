@@ -1,0 +1,36 @@
+.UpperContainer {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    overflow: hidden;
+}
+
+.UpperContainer nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.UpperContainer nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.UpperContainer h1 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin: 0;
+}
+
+.MainBody {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
