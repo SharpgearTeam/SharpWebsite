@@ -8,6 +8,8 @@
 
 .navigationBar img {
     padding:0px 10px;
+    display: inline-block;
+    position: relative;
 }
 
 .navigationBar nav a {
@@ -15,4 +17,24 @@
     font-size: 32px;
     padding: 10px 10px;
     font-family: 'Poppins';
+    display: inline-block;
+    position: relative;
+}
+
+.navigationBar img::after,
+.navigationBar nav a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.navigationBar img:hover::after,
+.navigationBar nav a:hover::after {
+    width: 100%;
 }
