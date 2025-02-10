@@ -1,40 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .navigationBar {
     background-color: #000;
     display: flex;
+    position: relative;
     align-items: center;
+    justify-content: left;
+    z-index: 3;
+}
+
+.navigationBar a {
+    color: white;
+    padding: 10px 15px;
+    font-size: 24px;
+    font-family: "Poppins";
+}
+
+body {
+    background-image: url("unnamed.png");
+    z-index: 1;
     overflow: hidden;
-    padding: 12px 20px;
-}
-
-.navigationBar img {
-    padding:0px 10px;
-    display: inline-block;
+    opacity: 10%;
     position: relative;
 }
 
-.navigationBar nav a {
-    color: #ffffff;
-    font-size: 32px;
-    padding: 10px 10px;
-    font-family: 'Poppins';
-    display: inline-block;
+.mainBody {
+    display: flex;
     position: relative;
+    justify-content: center;
+    font-family: "Poppins";
+    z-index: 2;
 }
 
-.navigationBar img::after,
-.navigationBar nav a::after {
-    content: '';
-    display: block;
+.mainBody .fadingLogo {
+    opacity: 100%;
+    mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+}
+
+.mainBody .logoCenter {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #ffffff;
-    transition: width 0.3s ease;
+    align-self: center;
+    margin-top: -28%;
 }
 
-.navigationBar img:hover::after,
-.navigationBar nav a:hover::after {
-    width: 100%;
+.mainBody .logoMoto {
+    position: absolute;
+    align-self: center;
+    margin-top: -18%;
+    font-size: 32px;
+    color: white;
 }
