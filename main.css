@@ -19,10 +19,15 @@
     font-family: "Poppins";
 }
 
+.navigationBar a img {
+    margin-top: 10%;
+}
+
 body {
     z-index: 1;
-    overflow: hidden;
     position: relative;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("unnamed.png");
+    background-position: center;
 }
 
 .mainBody {
@@ -31,24 +36,33 @@ body {
     justify-content: center;
     font-family: "Poppins";
     z-index: 1;
-    background-image: url("unnamed.png");
+    overflow: hidden;
 }
 
 .mainBody .fadingLogo {
     opacity: 100%;
-    mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 35%);
+    object-fit: contain;
+    overflow: hidden;
+    transform: scale(1.8) translateY(20%);
+    -webkit-transform: scale(1.8) translateY(20%);
+    -moz-transform: scale(1.8) translateY(20%);
+    -ms-transform: scale(1.8) translateY(20%);
+    -o-transform: scale(1.8) translateY(20%);
 }
 
 .mainBody .logoCenter {
     position: absolute;
     align-self: center;
     margin-top: -28%;
+    height: 75%;
+    width: 75%;
 }
 
 .mainBody .logoMoto {
     position: absolute;
     align-self: center;
-    margin-top: -18%;
-    font-size: 32px;
+    margin-top: -20%;
+    font-size: 26px;
     color: white;
 }
