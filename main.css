@@ -14,13 +14,14 @@
 
 .navigationBar a {
     color: white;
-    padding: 10px 15px;
+    padding: 8px 20px;
     font-size: 24px;
     font-family: "Poppins";
+    text-decoration: none; /* Remove o sublinhado */
 }
 
 .navigationBar a img {
-    margin-top: 10%;
+    vertical-align: middle;
 }
 
 body {
@@ -54,15 +55,27 @@ body {
 .mainBody .logoCenter {
     position: absolute;
     align-self: center;
-    margin-top: -28%;
-    height: 75%;
-    width: 75%;
+    margin-top: -35%;
+    height: 70%;
+    width:  70%;
 }
 
 .mainBody .logoMoto {
     position: absolute;
     align-self: center;
-    margin-top: -20%;
+    margin-top: -28%;
     font-size: 26px;
+    color: white;
+}
+
+.mainBody .tmp{
+    position: absolute;
+    align-self: center;
+    margin-top: -15%;
+
+    text-align: center;
+    
+    font-weight: bolder;
+    font-size: 30px;
     color: white;
 }
