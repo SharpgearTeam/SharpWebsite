@@ -93,15 +93,28 @@ body {
     color: white;
 }
 
+.mainBody .logoMoto, .mainBody .logoCenter {
+    animation: fadeIn-Up 2s forwards;
+    -webkit-animation: fadeIn-Up 2s forwards;
+}
+
 .mainBody .tmp{
     position: absolute;
     align-self: center;
     margin-top: -15%;
-
     text-align: center;
-    
+    animation: fadeIn-Up 2s forwards;
+    animation-delay: 5s;
     font-family: "Poppins", serif;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
     color: white;
+    opacity: 0;
+    -webkit-animation: fadeIn-Up 2s forwards;
+    -webkit-animation-delay: 2s;
+}
+
+@keyframes fadeIn-Up {
+    0% { opacity: 0; margin-top: 1%; }
+    100% { opacity: 1}
 }
