@@ -14,8 +14,8 @@
 
 .navigationBar a {
     color: white;
-    padding: 8px 20px;
-    font-size: 24px;
+    padding: 12px 20px;
+    font-size: 18px;
     font-family: "Poppins";
     text-decoration: none; /* Remove o sublinhado */
     display: inline-block;
@@ -52,7 +52,7 @@
 body {
     z-index: 1;
     position: relative;
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("unnamed.png");
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("images/background.png");
     background-position: center;
 }
 
@@ -89,8 +89,9 @@ body {
     position: absolute;
     align-self: center;
     margin-top: -28%;
-    font-size: 26px;
+    font-size: 22px;
     color: white;
+ 
 }
 
 .mainBody .logoMoto, .mainBody .logoCenter {
