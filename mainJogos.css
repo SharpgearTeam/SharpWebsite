@@ -48,7 +48,60 @@
 .navigationBar a img {
     vertical-align: middle;
 }
-
 body {
-    background-color: #1c3f00;
+    z-index: 1;
+    position: relative;
+    background-color: rgb(22, 21, 21);
+    background-position: center;
+}
+
+.mainBody {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: "Poppins";
+    z-index: 1;
+}
+
+.upperText {
+    color: white;
+    position: relative;
+    margin-top: 2%;
+    font-size: 52px;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+.gamesBox {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    margin-top: 15%;
+}
+
+.HellOWorldInfo {
+    color: white;
+    width: 1200px;
+    height: 400px;
+    background-color: black;
+    border: 3px solid #ffffff;
+    border-radius: 40px;
+    justify-items: center;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.HellOWorldInfo h1 {
+    font-size: 40px;
+    color: red;
+    text-align: center;
+    justify-self: center;
+    position:relative;
+}
+
+.HellOWorldInfo p {
+    text-align: center;
 }
