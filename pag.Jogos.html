@@ -2,54 +2,58 @@
 <html>
     <head>
         <title>Sharpgear | Games </title>
-        <link rel="stylesheet" href="mainJogos.css">
+        <link rel="stylesheet" href="src/output.css">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/svg/Sharpgear Logo copy.svg" type="image/x-icon">
     </head>
-
-
-
-    <body>
+    <body class="h-screen" style="height: auto; position: absolute; z-index:20; background-repeat:repeat; position:relative; background-position:center; overflow:auto; background-image:linear-gradient(to bottom, transparent, rgba(0, 0, 0, .9) 95%), url('images/background.png')">
         <header>
-            <nav class="navigationBar">
+            <nav class="z-50 bg-black h-17 px-5 py-2 text-white flex relative items-center font font-[Poppins]">
                 <a href="http://127.0.0.1:5500/main.html">
-                    <img src="images\svg\Sharpgear Logo.svg" width="40" height="40" alt="Sharpgear Logo">
+                    <img class="hover:animate-jump" src="images\svg\Sharpgear Logo.svg" width="40" height="40" alt="Sharpgear Logo">
                 </a>
         
-                <a href="main.html">SHARPGEAR</a>
-                <a href="pag.Jogos.html">JOGOS</a>
-                <a href="main.update.html">ATUALIZAÇÕES</a>
-                <a href="main.integrantes.html">INTEGRANTES</a>
+                <a class="mt-1 group transition duration-300 text-lg px-5 pl-10" href="main.html">
+                    SHARPGEAR
+                    <span class="relative block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                </a>
+                <a class="text-lg px-5 group transition duration-300" href="pag.Jogos.html">
+                    JOGOS
+                    <span class="relative block max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                </a>
+                <a class="text-lg px-5 group duration-300 transition" href="main.update.html">
+                    ATUALIZAÇÕES
+                    <span class="relative block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                </a>
+                <a class="text-lg px-5 group duration-300 transition" href="main.integrantes.html">
+                    INTEGRANTES
+                    <span class="relative block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                </a>
             </nav>
         </header>
-        
-        <div class="mainBody">
 
-            <div class="upperText">
-                Projetos originais e independentes<br>SHARPGEAR
-            </div>
+        <div class="h-[850px] relative -mt-30 self-center justify-center flex font-[Poppins] text-white">
+            <img style="mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 35%)" class="opacity-100 h-[200%] -mt-5 w-[100%] absolute" src="images\svg\Sharpgear Logo.svg">
+            <img class="absolute justify-self-center self-center h-[20%] -mt-[12%]" src="./images/jogos_maintitle.png">
 
-            <div class="gamesBox">
-                <a class="HellOWorldInfo">
-
-                    <h1>
-                        HELL-O WORLD
-                    </h1>
-
-                    <p>
-                        HELL-O WORLD é um jogo PvP para 2-4 jogadores
-                        que utiliza o sistema de Rollback Beta do GMS2.<br>
-                        Convide seus amigos (se você tiver algum) para
-                        destruí-los nesse jogo de tiro competitivo Top-Down. <br>
-                        -Criado e desenvolvido por AdriN. <br>
-                    </p>
-                    
-                </a>
-            </div>
+            <a class="font-thin justify-self text-center self-center absolute w-[80%] mt-[10%] text-[48px]">
+                Conheça alguns de nossos projetos <br> SHARPGEAR desenvolvidos ao longo <br> dos anos
+            </a>
 
         </div>
+
+        <img class="-mt-[15%] w-screen h-[10%] z-50" src="./images/jogos_divider_page.png">
+        <span class="items-center justify-center flex absolute w-[20%] -mt-[30%] m-[40%]">
+            <img class="px-10" src="images/Hell-O World/HELL-O WORLD mono.png">
+            <img class="px-10" src="images/Surv N Live/Surv N Live logo - Black.png">
+            <img class="px-10" src="images/Darkness Trigger/Darkness Trigger Logo (Black).png">
+        </span>
+
+        <div class="bg-black h-screen absolute w-full self-center justify-self-center">
+            
+        </div>    
 
     </body>
 </html>    

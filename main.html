@@ -9,42 +9,57 @@
         <link rel="icon" href="images/svg/Sharpgear Logo copy.svg" type="image/x-icon">
     </head>
 
-    <body style="z-index:20; background-repeat:repeat-x; position:relative; background-position:center; overflow:auto; background-image:linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 80%), url('images/background.png')">
+    <body class="h-screen" style="position: absolute; z-index:20; background-repeat:repeat; position:relative; background-position:center; overflow:auto; background-image:linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 90%), url('images/background.png')">
         <header>
             <nav class="z-50 bg-black h-17 px-5 py-2 text-white flex relative items-center font font-[Poppins]">
                 <a href="http://127.0.0.1:5500/main.html">
-                    <img src="images\svg\Sharpgear Logo.svg" width="40" height="40" alt="Sharpgear Logo">
+                    <img class="hover:animate-jump" src="images\svg\Sharpgear Logo.svg" width="40" height="40" alt="Sharpgear Logo">
                 </a>
         
-                <a class="text-lg px-5 pl-10" href="main.html">SHARPGEAR</a>
-                <a class="text-lg px-5" href="pag.Jogos.html">JOGOS</a>
-                <a class="text-lg px-5" href="main.update.html">ATUALIZAÇÕES</a>
-                <a class="text-lg px-5" href="main.integrantes.html">INTEGRANTES</a>
+                <a class="mt-1 group transition duration-300 text-lg px-5 pl-10" href="main.html">
+                    SHARPGEAR
+                    <span class="relative block max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                </a>
+                <a class="text-lg px-5 group transition duration-300" href="pag.Jogos.html">
+                    JOGOS
+                    <span class="relative block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                </a>
+                <a class="text-lg px-5 group duration-300 transition" href="main.update.html">
+                    ATUALIZAÇÕES
+                    <span class="relative block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                </a>
+                <a class="text-lg px-5 group duration-300 transition" href="main.integrantes.html">
+                    INTEGRANTES
+                    <span class="relative block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+                </a>
             </nav>
         </header>
 
         <div  class="h-[850px] relative -mt-30 self-center justify-center flex font-[Poppins] text-white">
                 <img style="mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 35%)" class="opacity-100 h-[200%] -mt-5 w-[100%] absolute" src="images\svg\Sharpgear Logo.svg">
-                <img class="justify-self-center self-center absolute w-[40%] -mt-[20%]" src="images\svg\Sharpgear Horizontal Logo.svg">
+                <img class="animate-fade-up animate-duration-2000 justify-self-center self-center absolute w-[40%] -mt-[20%]" src="images\svg\Sharpgear Horizontal Logo.svg">
 
-                <a class="font-thin justify-self text-center self-center absolute w-[50%] -mt-[12.5%] text-[25px]">
+                <a class="animate-fade-up animate-duration-2000 font-thin justify-self text-center self-center absolute w-[50%] -mt-[12.5%] text-[25px]">
                     Movendo engrenagens, afiando a experiência.
                 </a>
-                <a class = "font-black justify-self text-center self-center absolute w-[50%] mt-[2%] text-[36px]">
+                <a class = "animate-fade-up animate-delay-1500 animate-duration-2000 font-black justify-self text-center self-center absolute w-[50%] mt-[2%] text-[36px]">
                     Sharpgear é um grupo Brasileiro de<br> Desenvolvedores Independentes
                 </a>
 
-                <a class = "font-thin justify-self text-center self-center absolute w-[40%] mt-[17%] text-[18px]">
+                <a class = "animate-fade-up animate-delay-2500 animate-duration-2000 font-thin justify-self text-center self-center absolute w-[40%] mt-[17%] text-[18px]">
                     Queremos fazer com que ideias sejam mais que ideias, com <br> experiências criativas e sem qualquer amarra industrial.<br>
                     A sua ideia pode se tornar realidade com a nossa equipe de <br> artistas e desenvolvedores.
                 </a>
 
-                <div class="justify-center flex relative h-[15%] self-center mt-[35%]">
-                    <img class="px-10" src="images/Hell-O World/HELL-O WORLD white.png">
+                <div class="animate-fade-up animate-delay-3500 animate-duration-3000 ml-12 justify-center flex relative h-[15%] self-center mt-[35%]">
+                    <img class="px-10 h-[80%] mt-3" src="images/Hell-O World/HELL-O WORLD white.png">
                     <img class="px-10" src="images/Surv N Live/Surv N Live logo - White.png">
-                    <img class="px-10" src="images/Darkness Trigger/Darkness Trigger Logo (White).png">
+                    <img class="px-10 h-[140%] -mt-5" src="images/Darkness Trigger/Darkness Trigger Logo (White).png">
                 </div>
             </div>
+            <div class="bg-black h-screen absolute w-full self-center justify-self-center">
+
+            </div>    
         </div>
     </body>
 
