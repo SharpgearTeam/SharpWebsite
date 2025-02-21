@@ -2,51 +2,50 @@
 <html>
     <head>
         <title>Sharpgear | Home</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="src/output.css">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/svg/Sharpgear Logo copy.svg" type="image/x-icon">
     </head>
 
-    <body>
+    <body style="z-index:20; background-repeat:repeat-x; position:relative; background-position:center; overflow:auto; background-image:linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 80%), url('images/background.png')">
         <header>
-            <nav class="navigationBar">
+            <nav class="z-50 bg-black h-17 px-5 py-2 text-white flex relative items-center font font-[Poppins]">
                 <a href="http://127.0.0.1:5500/main.html">
                     <img src="images\svg\Sharpgear Logo.svg" width="40" height="40" alt="Sharpgear Logo">
                 </a>
         
-                <a href="main.html">SHARPGEAR</a>
-                <a href="pag.Jogos.html">JOGOS</a>
-                <a href="main.update.html">ATUALIZAÇÕES</a>
-                <a href="main.integrantes.html">INTEGRANTES</a>
+                <a class="text-lg px-5 pl-10" href="main.html">SHARPGEAR</a>
+                <a class="text-lg px-5" href="pag.Jogos.html">JOGOS</a>
+                <a class="text-lg px-5" href="main.update.html">ATUALIZAÇÕES</a>
+                <a class="text-lg px-5" href="main.integrantes.html">INTEGRANTES</a>
             </nav>
         </header>
 
-        <body>
-            <div class="mainBody">
-                <img class="fadingLogo" src="images\svg\Sharpgear Logo.svg" height="920" width="920">
-                <img class="logoCenter" src="images\svg\Sharpgear Horizontal Logo.svg">
-                
-                <a class="logoMoto">
+        <div  class="h-[850px] relative -mt-30 self-center justify-center flex font-[Poppins] text-white">
+                <img style="mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 35%)" class="opacity-100 h-[200%] -mt-5 w-[100%] absolute" src="images\svg\Sharpgear Logo.svg">
+                <img class="justify-self-center self-center absolute w-[40%] -mt-[20%]" src="images\svg\Sharpgear Horizontal Logo.svg">
+
+                <a class="font-thin justify-self text-center self-center absolute w-[50%] -mt-[12.5%] text-[25px]">
                     Movendo engrenagens, afiando a experiência.
                 </a>
-                <a class = "tmp">
+                <a class = "font-black justify-self text-center self-center absolute w-[50%] mt-[2%] text-[36px]">
                     Sharpgear é um grupo Brasileiro de<br> Desenvolvedores Independentes
                 </a>
 
-                <a class = "tmp2">
+                <a class = "font-thin justify-self text-center self-center absolute w-[40%] mt-[17%] text-[18px]">
                     Queremos fazer com que ideias sejam mais que ideias, com <br> experiências criativas e sem qualquer amarra industrial.<br>
                     A sua ideia pode se tornar realidade com a nossa equipe de <br> artistas e desenvolvedores.
                 </a>
 
-                <div class="gamesImage">
-                    <img class="HelloWorldIMG" src="images/Hell-O World/HELL-O WORLD white.png">
-                    <img class="survNLiveIMG" src="images/Surv N Live/Surv N Live logo - White.png">
-                    <img class="darknessTriggerIMG" src="images/Darkness Trigger/Darkness Trigger Logo (White).png">
+                <div class="justify-center flex relative h-[15%] self-center mt-[35%]">
+                    <img class="px-10" src="images/Hell-O World/HELL-O WORLD white.png">
+                    <img class="px-10" src="images/Surv N Live/Surv N Live logo - White.png">
+                    <img class="px-10" src="images/Darkness Trigger/Darkness Trigger Logo (White).png">
                 </div>
             </div>
-        </body>
+        </div>
     </body>
 
 </html>
