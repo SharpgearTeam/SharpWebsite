@@ -37,35 +37,6 @@
     -o-transition: transform 200ms ease-in-out;
 }
 
-
-.upperText {
-    color: rgb(0, 0, 0);
-    position: relative;
-    margin-top: 2%;
-    font-size: 52px;
-    text-align: center;
-    font-family: "Poppins";
-    font-weight: 700;
-}
-
-body {
-    z-index: 1;
-    position: relative;
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("images/background.png");
-    background-position: center;
-    overflow: hidden;
-}
-
-.mainBody {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    font-family: "Poppins";
-    z-index: 1;
-    overflow: hidden;
-    margin-top:-3%;
-}
-
 .navigationBar a:hover:after{
     transform: scaleX(1);
     -webkit-transform: scaleX(1);
@@ -79,5 +50,115 @@ body {
 }
 
 body {
+    z-index: 1;
+    position: relative;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("images/background.png");
+    background-position: center;
+    align-self: center;
+}
+
+.upperText {
+    color: white;
+    position: absolute;
+    margin-top: 2%;
+    font-size: 52px;
+    text-align: left;
+    justify-self: center;
+    margin-left: -55%;
+    margin-top: 8%;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+
+.my_button {
+    
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    position:absolute;
+    align-self: center;
+    justify-self: center;
+    margin-top: -15%;
+    margin-left: -75%;
+    border: 2px solid white;
+    border-radius: 10px; /* Cantos arredondados */
+    border-width: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.my_button:hover {
     background-color: #ffffff;
+}
+
+
+
+
+.mainBody {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: "Poppins";
+    z-index: 1;
+    overflow: hidden;
+    margin-top:-3%;
+}
+
+.mainBody .fadingLogo {
+    opacity: 100%;
+    mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 35%);
+    object-fit: contain;
+    overflow: hidden;
+    position: static;
+    align-self: center;
+    justify-self: center;   
+    transform: scale(1.8) translateY(20%);
+    -webkit-transform: scale(1.8) translateY(20%);
+    -moz-transform: scale(1.8) translateY(20%);
+    -ms-transform: scale(1.8) translateY(20%);
+    -o-transform: scale(1.8) translateY(20%);
+}
+
+.mainBody .logoCenter {
+    position: absolute;
+    align-self: center;
+    margin-top: -35%;
+    height: 70%;
+    width:  70%;
+}
+
+.mainBody .logoMoto {
+    position: absolute;
+    align-self: center;
+    margin-top: -28%;
+    font-size: 22px;
+    color: white;
+}
+
+.gamesImage {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    padding-top: 35%;
+    animation: fadeIn-Up2 2s forwards;
+    animation-delay: 6s;
+    opacity: 0;
+    -webkit-animation: fadeIn-Up2 2s forwards;
+    -webkit-animation-delay: 6s;
+}
+
+.mainBody .HelloWorldIMG,
+.mainBody .survNLiveIMG,
+.mainBody .darknessTriggerIMG {
+    width: 8%;
+    height: 10%;
+    padding: 0px 30px;
+}
+
+.mainBody .logoMoto, .mainBody .logoCenter {
+    animation: fadeIn-Up 2s forwards;
+    -webkit-animation: fadeIn-Up 2s forwards;
 }
