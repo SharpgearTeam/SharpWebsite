@@ -37,6 +37,35 @@
     -o-transition: transform 200ms ease-in-out;
 }
 
+
+.upperText {
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin-top: 2%;
+    font-size: 52px;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+body {
+    z-index: 1;
+    position: relative;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("images/background.png");
+    background-position: center;
+    overflow: hidden;
+}
+
+.mainBody {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: "Poppins";
+    z-index: 1;
+    overflow: hidden;
+    margin-top:-3%;
+}
+
 .navigationBar a:hover:after{
     transform: scaleX(1);
     -webkit-transform: scaleX(1);
