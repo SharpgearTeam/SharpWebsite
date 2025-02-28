@@ -50,18 +50,24 @@
 }
 
 body {
-    z-index: 1;
+    z-index: 2;
     position: relative;
+    overflow-x: hidden;
 }
 
 .background {
     background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("images/background.png");
     height: 100vh;
     width: 100vw;
-    z-index: -1;
+    z-index: 0;
     position: absolute;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
+}
+
+.mainBody {
+    display: flex;
 }
 
 .fadingLogo {
@@ -76,17 +82,13 @@ body {
     -o-transform: scale(1.8) translateY(20%);
 }
 
-.upperText {
-    color: white;
-    position: absolute;
-    margin-top: 2%;
-    font-size: 52px;
-    text-align: left;
-    justify-self: center;
-    margin-left: -55%;
-    margin-top: 8%;
+.upperText{
     font-family: "Poppins";
-    font-weight: 700;
+    color:white;
+    position: absolute;
+    text-align: center;
+    margin-top: 17%;
+    font-weight: 200;
 }
 
 .upperImage {
@@ -94,6 +96,14 @@ body {
     position: relative;
     margin-top: 5%;
     height: 20%;
+    z-index: 2;
+}
+
+.Divider {
+    position: absolute;
+    z-index: 0;
+    margin-top: 23%;
+    margin-left: -10%;
 }
 
 .gamesBox {
