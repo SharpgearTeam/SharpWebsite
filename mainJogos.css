@@ -48,60 +48,58 @@
 .navigationBar a img {
     vertical-align: middle;
 }
+
 body {
     z-index: 1;
     position: relative;
-    background-color: rgb(22, 21, 21);
-    background-position: center;
 }
 
-.mainBody {
+.background {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("images/background.png");
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
     display: flex;
-    position: relative;
     justify-content: center;
-    font-family: "Poppins";
-    z-index: 1;
+}
+
+.fadingLogo {
+    opacity: 100%;
+    mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 35%);
+    overflow: hidden;
+    position:absolute;
+    transform: scale(1.8) translateY(20%);
+    -webkit-transform: scale(1.8) translateY(20%);
+    -moz-transform: scale(1.8) translateY(20%);
+    -ms-transform: scale(1.8) translateY(20%);
+    -o-transform: scale(1.8) translateY(20%);
 }
 
 .upperText {
     color: white;
-    position: relative;
+    position: absolute;
     margin-top: 2%;
     font-size: 52px;
-    text-align: center;
+    text-align: left;
+    justify-self: center;
+    margin-left: -55%;
+    margin-top: 8%;
     font-family: "Poppins";
     font-weight: 700;
 }
 
+.upperImage {
+    color: white;
+    position: relative;
+    margin-top: 5%;
+    height: 20%;
+}
+
 .gamesBox {
-    position: absolute;
-    justify-content: center;
-    display: flex;
-    margin-top: 15%;
+
 }
 
 .HellOWorldInfo {
-    color: white;
-    width: 1200px;
-    height: 400px;
-    background-color: black;
-    border: 3px solid #ffffff;
-    border-radius: 40px;
-    justify-items: center;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-}
 
-.HellOWorldInfo h1 {
-    font-size: 40px;
-    color: red;
-    text-align: center;
-    justify-self: center;
-    position:relative;
-}
-
-.HellOWorldInfo p {
-    text-align: center;
 }
