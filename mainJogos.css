@@ -51,7 +51,6 @@
 
 body {
     z-index: 2;
-    position: relative;
     overflow-x: hidden;
 }
 
@@ -63,7 +62,6 @@ body {
     position: absolute;
     display: flex;
     justify-content: center;
-    overflow-x: hidden;
 }
 
 .mainBody {
@@ -100,10 +98,40 @@ body {
 }
 
 .Divider {
-    position: absolute;
+    position: relative;
     z-index: 0;
-    margin-top: 23%;
+    margin-top: 27%;
     margin-left: -10%;
+}
+
+.dividerBox {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 34%;
+    margin-left: 5%;
+}
+
+.dividerBox img {
+    padding-right: 40px;
+    padding-left: 40px;
+    filter: grayscale(100%) brightness(0%);
+}
+
+.hwImg {
+    width: 11%;
+    height: 11%;
+}
+
+.dtImg {
+    width: 15%;
+    height: 15%;
+}
+
+.snlImg {
+    width: 12%;
+    height: 12%;
 }
 
 .gamesBox {
