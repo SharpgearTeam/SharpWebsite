@@ -55,6 +55,7 @@ body {
     background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("images/background.png");
     background-position: center;
     align-self: center;
+   
 }
 
 .upperText {
@@ -93,6 +94,41 @@ body {
 .my_button:hover {
     background-color: #ffffff;
 }
+
+.LauncherImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sg1{
+
+  position: absolute;
+  height: 30%;  
+  margin-top: 15%;
+  margin-left: -123%;
+
+}
+
+
+.sg2{
+
+    position: absolute;
+    height: 30%;  
+    margin-top: 15%;
+    margin-left: -57%;
+  
+}
+
+.sg3{
+
+    position: absolute;
+    height: 30%;  
+    margin-top: 15%;
+    margin-left: 8%;
+  
+}
+
 
 
 
