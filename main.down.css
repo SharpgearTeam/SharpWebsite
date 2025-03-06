@@ -55,7 +55,7 @@ body {
     background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("images/background.png");
     background-position: center;
     align-self: center;
-    overflow: hidden ;
+   
 }
 
 .upperText {

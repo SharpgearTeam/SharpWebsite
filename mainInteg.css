@@ -51,4 +51,16 @@
 
 body {
     background-color: #57b1d4;
+    overflow-x: hidden;
+}
+
+
+
+.background {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 50%), url("images/background.png");
+    z-index: 0;
+    position: static;
+    display: flex;
+    justify-content: center;
+    height: 135vh;
 }
